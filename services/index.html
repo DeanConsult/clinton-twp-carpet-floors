@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flooring Services | Clinton Township Carpet and Floors</title>
+  <meta name="description" content="Carpet, hardwood floors, laminate, ceramic tile, vinyl tile, linoleum, outdoor carpeting, and commercial flooring in Clinton Township MI. Call 586-327-7054." />
+  <link rel="canonical" href="https://www.clintontwpcarpetandfloors.com/services/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#c8781a" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --amber: #c8781a; --amber-dark: #a5631a; --dark: #2b2b35; --white: #ffffff; --gray: #f5f6f8; --text: #1a1a1a; --muted: #6b7280; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; position: relative; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.1rem; line-height: 1.2; }
+    .nav-brand span { color: var(--amber); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--amber); }
+    .btn-call { background: var(--amber); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; }
+    .btn-call:hover { background: var(--amber-dark); }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; line-height: 1; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; box-shadow: 0 8px 20px rgba(0,0,0,0.3); padding: 8px 24px; z-index: 99; }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .page-hero { background: var(--dark); padding: 56px 24px; text-align: center; position: relative; overflow: hidden; }
+    .page-hero::before { content: ''; position: absolute; inset: 0; background-image: url('../images/istockphoto-843124004-612x612.jpg'); background-size: cover; background-position: center; opacity: 0.25; }
+    .page-hero-content { position: relative; z-index: 1; }
+    .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .page-hero h1 span { color: var(--amber); }
+    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    section { padding: 72px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--amber-dark); margin-bottom: 10px; }
+    .service-block { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-bottom: 72px; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+    @media (max-width: 768px) { .service-block { grid-template-columns: 1fr; direction: ltr; } .service-block.reverse { direction: ltr; } }
+    .service-block-img { border-radius: 14px; overflow: hidden; height: 320px; }
+    .service-block-img img { width: 100%; height: 100%; object-fit: cover; }
+    .service-block-text h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 16px; }
+    .service-block-text p { font-size: 0.97rem; color: #374151; line-height: 1.8; margin-bottom: 16px; }
+    .services-list { list-style: none; margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .services-list li { font-size: 0.95rem; color: #374151; display: flex; align-items: center; gap: 8px; }
+    .services-list li::before { content: ''; width: 8px; height: 8px; background: var(--amber); border-radius: 50%; flex-shrink: 0; }
+    .btn-service { display: inline-block; background: var(--amber); color: var(--white); padding: 12px 24px; border-radius: var(--radius); font-weight: 700; font-size: 0.9rem; margin-top: 8px; }
+    .btn-service:hover { background: var(--amber-dark); }
+    .cta-banner { background: var(--dark); padding: 52px 24px; text-align: center; }
+    .cta-banner h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-banner p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
+    .cta-phone { display: inline-block; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: var(--amber); margin-bottom: 20px; }
+    .btn-cta { background: var(--amber); color: var(--white); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
+    .btn-cta:hover { background: var(--amber-dark); }
+    footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 40px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; margin-bottom: 32px; }
+    .footer-brand { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+    .footer-brand span { color: var(--amber); }
+    .footer-tagline { font-size: 0.85rem; max-width: 260px; line-height: 1.6; }
+    .footer-links h4 { color: var(--white); font-size: 0.82rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.65); transition: color .2s; }
+    .footer-links a:hover { color: var(--amber); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.5); }
+    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; box-shadow: 0 -4px 16px rgba(0,0,0,0.2); }
+    @media (max-width: 768px) { .mobile-call-btn { display: block; } body { padding-bottom: 58px; } }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">Clinton Twp<br><span>Carpet &amp; Floors</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../about/">About Us</a></li>
+      <li><a href="../services/">Our Services</a></li>
+      <li><a href="../#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:5863277054" class="btn-call">Call 586-327-7054</a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+</nav>
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1>Our <span>Flooring Services</span></h1>
+    <p>Clinton Township Carpet and Floors has just about any type of flooring you may need — for residential and commercial projects throughout Metro Detroit.</p>
+  </div>
+</div>
+<section>
+  <div class="section-inner">
+    <div class="service-block">
+      <div class="service-block-img"><img src="../images/Mineral king-SW567-02002-Bravo-samples-lookbook-2.webp" alt="Carpet installation Clinton Township MI" loading="lazy" /></div>
+      <div class="service-block-text">
+        <div class="section-label">Carpeting</div>
+        <h2>Carpet for Every Room &amp; Every Budget</h2>
+        <p>At Clinton Township Carpet and Floors we are well equipped to handle any and all of your carpeting needs for your home or business. Our inventory of carpet styles, brands, and colors is unmatched, and we bring them right to you.</p>
+        <p>Styles such as loop, Berber, level cut, plush, and many more give us the tools to give you the exact look you are going for. Perfect for basements, apartments, stairs, bedrooms, hallways, and anywhere else you could want carpet.</p>
+        <a href="../#contact" class="btn-service">Get a Free Carpet Estimate</a>
+      </div>
+    </div>
+    <div class="service-block reverse">
+      <div class="service-block-img"><img src="../images/istockphoto-1405039658-612x612.jpg" alt="Hardwood floor installation Clinton Township" loading="lazy" /></div>
+      <div class="service-block-text">
+        <div class="section-label">Hardwood Floors</div>
+        <h2>Stunning Hardwood — Expert Installation</h2>
+        <p>Clinton Township Carpet and Floors has been experts in all things hardwood floors for decades. Our specialists can come out to you and walk you through our large selection of sizes, colors, and styles to find the perfect fit.</p>
+        <p>Issues like budget, sunlight exposure, and traffic patterns are just a few of the criteria our specialists can help you with to make sure all of your hardwood floor needs are met.</p>
+        <a href="../#contact" class="btn-service">Get a Free Hardwood Estimate</a>
+      </div>
+    </div>
+    <div class="service-block">
+      <div class="service-block-img"><img src="../images/blog_51_brownhardwood.jpeg" alt="Laminate flooring Clinton Township Michigan" loading="lazy" /></div>
+      <div class="service-block-text">
+        <div class="section-label">Laminate Floors</div>
+        <h2>Beautiful Laminate at a Great Price</h2>
+        <p>Many are opting for laminate flooring as opposed to hardwood because of its large selection of colors and styles, as well as its lower price. Laminate is durable, easy to maintain, and comes in styles that closely mimic the look of hardwood, tile, or stone.</p>
+        <p>We have experts to consult with you and help pick out the perfect laminate for your home or business.</p>
+        <a href="../#contact" class="btn-service">Get a Free Laminate Estimate</a>
+      </div>
+    </div>
+    <div class="service-block reverse">
+      <div class="service-block-img"><img src="../images/Herbst-Trendfarbe-Mobile.webp" alt="Ceramic tile and vinyl flooring Clinton Township MI" loading="lazy" /></div>
+      <div class="service-block-text">
+        <div class="section-label">Ceramic Tile &amp; Vinyl Tile</div>
+        <h2>Tile &amp; Vinyl — Durable &amp; Stylish</h2>
+        <p>Just about any type of flooring you require, Clinton Township Carpet and Floors can make it happen. Ceramic tile and custom vinyl tile are excellent choices for kitchens, bathrooms, entryways, and more.</p>
+        <ul class="services-list">
+          <li>Ceramic Tile</li>
+          <li>Custom Vinyl Tile</li>
+          <li>Luxury Vinyl Plank</li>
+          <li>Linoleum</li>
+          <li>Outdoor Carpeting</li>
+        </ul>
+        <a href="../#contact" class="btn-service">Get a Free Tile Estimate</a>
+      </div>
+    </div>
+    <div class="service-block">
+      <div class="service-block-img"><img src="../images/gradus-commercial-carpet-1.jpg" alt="Commercial flooring Clinton Township Michigan" loading="lazy" /></div>
+      <div class="service-block-text">
+        <div class="section-label">Commercial Flooring</div>
+        <h2>Commercial Projects — Any Size</h2>
+        <p>Clinton Township Carpet and Floors' expertise is not limited to residential flooring. We specialize in commercial flooring and are well equipped to handle any project you throw at us. We can handle projects ranging from doctors' offices to locker rooms.</p>
+        <p>Installing commercial carpeting and flooring quickly and effectively so as to not interrupt your business is something we take pride in.</p>
+        <a href="../#contact" class="btn-service">Get a Commercial Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cta-banner">
+  <h2>Ready to Schedule Your Free Estimate?</h2>
+  <p>Call us now or fill out our contact form and we'll come to you.</p>
+  <a href="tel:5863277054" class="cta-phone">586-327-7054</a><br>
+  <a href="../#contact" class="btn-cta">Request a Free Estimate</a>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Clinton Twp <span>Carpet &amp; Floors</span></div>
+        <p class="footer-tagline">Shop-at-home flooring serving Clinton Township MI and Metro Detroit for 20+ years.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../about/">About Us</a></li>
+          <li><a href="../services/">Our Services</a></li>
+          <li><a href="../resources/">Resources</a></li>
+          <li><a href="../privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="yr"></span> Clinton Township Carpet and Floors. All rights reserved.</span>
+      <a href="../privacy-policy/">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+<a href="tel:5863277054" class="mobile-call-btn">Call Now — 586-327-7054</a>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  (function(){var hb=document.querySelector(".hamburger");var nv=document.querySelector("#nav-links");if(!hb||!nv)return;hb.addEventListener("click",function(){var open=nv.classList.toggle("open");hb.setAttribute("aria-expanded",open);});nv.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nv.classList.remove("open");hb.setAttribute("aria-expanded","false");});});})();
+</script>
+</body>
+</html>
