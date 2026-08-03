@@ -3,219 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flooring Resources | Clinton Township Carpet and Floors</title>
-  <meta name="description" content="Carpet and flooring tips, maintenance advice, and FAQ for homeowners in Clinton Township MI. Keep your floors looking great for years." />
-  <link rel="canonical" href="https://www.clintontwpcarpetandfloors.com/resources/" />
-  <meta name="robots" content="index, follow" />
+  <title>Trusted Local Companies | Clinton Township Carpet and Floors</title>
+  <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#c8781a" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"How do I keep my carpet looking new?","acceptedAnswer":{"@type":"Answer","text":"Vacuum regularly — about once a week — and address spills immediately by dabbing (never scrubbing). Deep steam clean your carpets 1-2 times a year to remove embedded particles your vacuum misses. Regular maintenance can significantly extend the life of your carpet."}},
-      {"@type":"Question","name":"How long does carpet typically last?","acceptedAnswer":{"@type":"Answer","text":"With proper care, most carpet lasts 10-15 years. Higher-quality carpet in low-traffic areas can last even longer. Regular vacuuming and prompt stain treatment are the biggest factors in extending carpet life."}},
-      {"@type":"Question","name":"What type of flooring is best for kitchens and bathrooms?","acceptedAnswer":{"@type":"Answer","text":"Ceramic tile, luxury vinyl plank, and vinyl tile are excellent choices for kitchens and bathrooms due to their water resistance and durability. Laminate can also work in lower-moisture environments. We can help you pick the right option for your specific needs."}},
-      {"@type":"Question","name":"Is laminate flooring as good as hardwood?","acceptedAnswer":{"@type":"Answer","text":"Laminate is not the same as hardwood, but it is an excellent flooring option in its own right. It's more affordable, more durable in high-traffic areas, and comes in hundreds of styles that can closely mimic the look of wood, stone, or tile."}},
-      {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer 12 months interest-free financing through Synchrony Bank. Ask about it when we come out for your free estimate."}},
-      {"@type":"Question","name":"How do I care for hardwood floors?","acceptedAnswer":{"@type":"Answer","text":"Sweep or vacuum regularly to remove dirt and debris that can scratch the surface. Use a damp (not wet) mop for cleaning. Avoid standing water, use furniture pads, and place rugs in high-traffic areas. Recoat the finish every 3-5 years to keep hardwood looking its best."}}
-    ]
-  }
-  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --amber: #c8781a; --amber-dark: #a5631a; --dark: #2b2b35; --white: #ffffff; --gray: #f5f6f8; --text: #1a1a1a; --muted: #6b7280; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
-    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--text); background: var(--white); }
+    :root { --amber: #c8781a; --accent-dark: #a86010; --nav-bg: #2b2b35; --white: #fff; --gray: #f5f6f8; --text: #1a1a1a; --muted: #6b7280; --radius: 8px; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); background: var(--white); }
     a { color: inherit; text-decoration: none; }
-    img { display: block; max-width: 100%; }
-    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
-    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; position: relative; }
+    nav { background: var(--nav-bg); padding: 0 24px; position: relative; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
     .nav-brand { color: var(--white); font-weight: 800; font-size: 1.1rem; line-height: 1.2; }
     .nav-brand span { color: var(--amber); }
     .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; transition: color .2s; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
     .nav-links a:hover { color: var(--amber); }
     .btn-call { background: var(--amber); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; }
-    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; line-height: 1; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
     @media (max-width: 768px) {
-      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; box-shadow: 0 8px 20px rgba(0,0,0,0.3); padding: 8px 24px; z-index: 99; }
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--nav-bg); flex-direction: column; gap: 0; padding: 8px 24px; z-index: 99; }
       .nav-links.open { display: flex; }
-      .nav-links li { width: 100%; }
       .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
       .btn-call { display: none; }
       .hamburger { display: block; }
     }
-    .page-hero { background: var(--dark); padding: 56px 24px; text-align: center; position: relative; overflow: hidden; }
-    .page-hero::before { content: ''; position: absolute; inset: 0; background-image: url('../images/istockphoto-511708181-612x612.jpg'); background-size: cover; background-position: center; opacity: 0.22; }
-    .page-hero-content { position: relative; z-index: 1; }
-    .page-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .page-hero { background: var(--nav-bg); padding: 48px 24px; text-align: center; }
+    .page-hero h1 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
     .page-hero h1 span { color: var(--amber); }
-    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 580px; margin: 0 auto; line-height: 1.7; }
-    section { padding: 72px 24px; }
-    .section-inner { max-width: 1100px; margin: 0 auto; }
-    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--amber-dark); margin-bottom: 10px; }
-    .section-title { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: var(--dark); margin-bottom: 32px; }
-    .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    @media (max-width: 900px) { .tips-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 580px) { .tips-grid { grid-template-columns: 1fr; } }
-    .tip-card { background: var(--gray); border-radius: 12px; padding: 28px 24px; border-left: 4px solid var(--amber); }
-    .tip-num { width: 36px; height: 36px; background: var(--amber); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.9rem; margin-bottom: 14px; }
-    .tip-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
-    .tip-card p { font-size: 0.9rem; color: #374151; line-height: 1.65; }
-    .carpet-care-section { background: var(--dark); padding: 72px 24px; }
-    .carpet-care-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-    @media (max-width: 768px) { .carpet-care-inner { grid-template-columns: 1fr; } }
-    .carpet-care-img { border-radius: 12px; overflow: hidden; height: 360px; }
-    .carpet-care-img img { width: 100%; height: 100%; object-fit: cover; }
-    .carpet-care-text .section-label { color: var(--amber); }
-    .carpet-care-text .section-title { color: var(--white); }
-    .carpet-care-text p { color: rgba(255,255,255,0.78); font-size: 0.97rem; line-height: 1.85; margin-bottom: 16px; }
-    .faq-section { background: var(--gray); }
-    .faq-list { display: flex; flex-direction: column; gap: 16px; max-width: 800px; }
-    .faq-item { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
-    .faq-q { width: 100%; background: none; border: none; padding: 20px 24px; text-align: left; font-size: 1rem; font-weight: 700; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-    .faq-q svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--amber); transition: transform .3s; }
-    .faq-q[aria-expanded="true"] svg { transform: rotate(180deg); }
-    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .3s; padding: 0 24px; font-size: 0.95rem; color: #374151; line-height: 1.75; }
-    .faq-a.open { max-height: 300px; padding: 0 24px 20px; }
-    .cta-banner { background: var(--dark); padding: 52px 24px; text-align: center; }
-    .cta-banner h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
-    .cta-banner p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
-    .btn-cta { background: var(--amber); color: var(--white); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
-    footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 40px 24px 24px; }
-    .footer-inner { max-width: 1100px; margin: 0 auto; }
-    .footer-top { display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; margin-bottom: 32px; }
-    .footer-brand { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
-    .footer-brand span { color: var(--amber); }
-    .footer-tagline { font-size: 0.85rem; max-width: 260px; line-height: 1.6; }
-    .footer-links h4 { color: var(--white); font-size: 0.82rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
-    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.65); transition: color .2s; }
-    .footer-links a:hover { color: var(--amber); }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
-    .footer-bottom a { color: rgba(255,255,255,0.5); }
-    .mobile-call-btn { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; background: var(--amber); color: var(--white); text-align: center; padding: 16px; font-weight: 800; font-size: 1.1rem; box-shadow: 0 -4px 16px rgba(0,0,0,0.2); }
-    @media (max-width: 768px) { .mobile-call-btn { display: block; } body { padding-bottom: 58px; } }
+    .page-hero p { color: rgba(255,255,255,0.7); font-size: 0.97rem; max-width: 560px; margin: 0 auto; line-height: 1.7; }
+    .content { max-width: 900px; margin: 0 auto; padding: 56px 24px 80px; }
+    .category { margin-bottom: 48px; }
+    .category h2 { font-size: 1.1rem; font-weight: 800; color: var(--nav-bg); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--amber); }
+    .company-list { display: flex; flex-direction: column; gap: 12px; }
+    .company-card { display: flex; justify-content: space-between; align-items: center; background: var(--gray); border-radius: var(--radius); padding: 16px 20px; gap: 16px; }
+    .company-info h3 { font-size: 0.97rem; font-weight: 700; color: var(--nav-bg); margin-bottom: 3px; }
+    .company-info p { font-size: 0.85rem; color: var(--muted); }
+    .company-link { flex-shrink: 0; background: var(--amber); color: var(--white); padding: 8px 18px; border-radius: var(--radius); font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
+    .company-link:hover { background: var(--accent-dark); }
+    @media (max-width: 560px) { .company-card { flex-direction: column; align-items: flex-start; } }
+    footer { background: var(--nav-bg); color: rgba(255,255,255,0.7); padding: 28px 24px; text-align: center; font-size: 0.82rem; }
+    footer a { color: rgba(255,255,255,0.5); margin: 0 8px; }
+    footer a:hover { color: var(--amber); }
   </style>
 </head>
 <body>
 <nav>
   <div class="nav-inner">
-    <div class="nav-brand">Clinton Twp<br><span>Carpet &amp; Floors</span></div>
+    <div class="nav-brand">Clinton Twp
+<span>Carpet &amp; Floors</span></div>
     <ul class="nav-links" id="nav-links">
       <li><a href="../">Home</a></li>
       <li><a href="../about/">About Us</a></li>
       <li><a href="../services/">Our Services</a></li>
-      <li><a href="../#contact">Free Estimate</a></li>
+      <li><a href="../#contact">Contact Us</a></li>
     </ul>
     <a href="tel:5863277054" class="btn-call">Call 586-327-7054</a>
-    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
   </div>
 </nav>
 <div class="page-hero">
-  <div class="page-hero-content">
-    <h1>Flooring <span>Resources</span></h1>
-    <p>Tips and advice to help you choose, care for, and get the most out of your new floors.</p>
-  </div>
+  <h1>Trusted <span>Local Companies</span></h1>
+  <p>A handpicked list of service providers we know and recommend to our customers.</p>
 </div>
-<section>
-  <div class="section-inner">
-    <div class="section-label">Floor Care Tips</div>
-    <div class="section-title">Keep Your Floors Looking Great</div>
-    <div class="tips-grid">
-      <div class="tip-card">
-        <div class="tip-num">1</div>
-        <h3>Vacuum Your Carpet Weekly</h3>
-        <p>Regular vacuuming prevents grime, dust, and dirt from embedding into your carpet fibers. Weekly vacuuming is one of the simplest things you can do to extend the life of your carpet significantly.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-num">2</div>
-        <h3>Address Spills Immediately</h3>
-        <p>When something spills, dab it up right away — never scrub. Blotting lifts the liquid out; scrubbing pushes it deeper into the carpet. Acting fast prevents permanent staining.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-num">3</div>
-        <h3>Steam Clean 1-2 Times Per Year</h3>
-        <p>Deep steam cleaning gets embedded particles that regular vacuuming misses. Either rent a steam cleaner from a local hardware store or hire a professional carpet cleaning service to maintain your carpet.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-num">4</div>
-        <h3>Use Furniture Pads on Hard Floors</h3>
-        <p>Protect hardwood, laminate, and vinyl floors from scratches by placing felt pads under furniture legs. Replace them regularly as they wear down. Even small scratches from dragged furniture can dull your floor finish.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-num">5</div>
-        <h3>Avoid Standing Water on Hard Floors</h3>
-        <p>Excess moisture is the enemy of hardwood and laminate floors. Wipe up spills immediately and use a damp — not wet — mop when cleaning. Standing water can warp planks and cause lasting damage.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-num">6</div>
-        <h3>Use Rugs in High-Traffic Areas</h3>
-        <p>Placing area rugs in hallways, entryways, and living rooms protects your floor from heavy foot traffic. Rugs trap dirt before it reaches your floor and also add style to any room.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="carpet-care-section">
-  <div class="carpet-care-inner">
-    <div class="carpet-care-img"><img src="../images/stock-photo-vacuum-cleaner.jpeg" alt="Caring for carpet Clinton Township MI" loading="lazy" /></div>
-    <div class="carpet-care-text">
-      <p class="section-label">Caring for Your Carpet</p>
-      <h2 class="section-title">Make Your Carpet Last</h2>
-      <p>At Clinton Township Carpet and Floors, we hope to be your partners in your carpeting — not just the company that sells it to you. We want to help you pick out the best carpet for you, and for it to last as long as possible.</p>
-      <p>Making your carpet last is pretty easy. All it takes is a few simple cleaning procedures, and you can increase the life of your carpet by years. Vacuum around once a week, address spills immediately by dabbing (never scrubbing), and deep steam clean 1-2 times a year.</p>
-      <p>These quick tips go an extremely long way toward keeping your carpet in great shape — looking and feeling fresh for years after other carpets would need replacing. If you're ready for new carpet, give us a call and we'll come to you with our full selection.</p>
-    </div>
-  </div>
-</div>
-<section class="faq-section">
-  <div class="section-inner">
-    <div class="section-label">Common Questions</div>
-    <div class="section-title">Flooring FAQ</div>
-    <div class="faq-list">
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">How do I keep my carpet looking new?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">Vacuum regularly — about once a week — and address spills immediately by dabbing (never scrubbing). Deep steam clean your carpets 1-2 times a year to remove embedded particles your vacuum misses. Regular maintenance can significantly extend the life of your carpet.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">How long does carpet typically last?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">With proper care, most carpet lasts 10-15 years. Higher-quality carpet in low-traffic areas can last even longer. Regular vacuuming and prompt stain treatment are the biggest factors in extending carpet life.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">What type of flooring is best for kitchens and bathrooms?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">Ceramic tile, luxury vinyl plank, and vinyl tile are excellent choices for kitchens and bathrooms due to their water resistance and durability. Laminate can also work in lower-moisture environments. We can help you pick the right option when we come out for your free estimate.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is laminate flooring as good as hardwood?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">Laminate is not the same as hardwood, but it is an excellent flooring option in its own right. It's more affordable, more durable in high-traffic areas, and comes in hundreds of styles that closely mimic the look of wood, stone, or tile. Many homeowners prefer it for busy areas of the home.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you offer financing?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">Yes. We offer 12 months interest-free financing through Synchrony Bank. Ask about it when we come out for your free estimate — it's a great way to get beautiful new floors now and pay over time.</div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">How do I care for hardwood floors?<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></button><div class="faq-a">Sweep or vacuum regularly to remove dirt that can scratch the surface. Use a damp (not wet) mop for cleaning, and avoid standing water. Use furniture pads and place rugs in high-traffic areas. Recoat the finish every 3-5 years to keep hardwood looking its best.</div></div>
-    </div>
-  </div>
-</section>
-<div class="cta-banner">
-  <h2>Have More Questions?</h2>
-  <p>Give us a call or fill out a form — we're happy to help.</p>
-  <a href="../#contact" class="btn-cta">Contact Us Today</a>
-</div>
+<div class="content">
+  <div class="category">
+    <h2>HVAC &mdash; Heating &amp; Cooling</h2>
+    <div class="company-list">
+      <div class="company-card"><div class="company-info"><h3>Westland Furnace LLC</h3><p>Furnace &amp; AC repair and installation &mdash; Westland, MI</p></div><a href="https://www.westlandfurnaceandac.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Canton Furnace LLC</h3><p>Furnace &amp; AC repair and installation &mdash; Canton, MI</p></div><a href="https://www.cantonfurnaceandac.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>West Bloomfield Furnace &amp; AC</h3><p>Heating &amp; cooling services &mdash; West Bloomfield, MI</p></div><a href="https://wbheatingandac.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Dearborn Furnace &amp; AC</h3><p>HVAC repair and installation &mdash; Dearborn, MI</p></div><a href="https://www.dearbornfurnaceandac.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Farmington Hills Furnace &amp; AC</h3><p>Furnace &amp; air conditioning &mdash; Farmington Hills, MI</p></div><a href="https://www.farmhlsfurnaceandair.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Novi Furnace &amp; AC</h3><p>HVAC services &mdash; Novi, MI</p></div><a href="https://novifurnaceandac.com" class="company-link" rel="nofollow">Visit Site</a></div>    </div>
+  </div>  <div class="category">
+    <h2>Electrical</h2>
+    <div class="company-list">
+      <div class="company-card"><div class="company-info"><h3>Electrician Guys Grand Rapids</h3><p>Licensed electricians &mdash; Grand Rapids, MI</p></div><a href="https://electricianguysgrandrapids.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Evansville Electrician Pros</h3><p>Electrical repair &amp; installation &mdash; Evansville, IN</p></div><a href="https://evansvilleelectricianpros.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Pasadena Electrician Guys</h3><p>Licensed electricians &mdash; Pasadena, CA</p></div><a href="https://www.pasadenaelectricianguys.com" class="company-link" rel="nofollow">Visit Site</a></div>    </div>
+  </div>  <div class="category">
+    <h2>Flooring</h2>
+    <div class="company-list">
+      <div class="company-card"><div class="company-info"><h3>Macomb Flooring Mart</h3><p>Carpet, hardwood &amp; flooring &mdash; Macomb, MI</p></div><a href="https://www.macombflooringmart.com" class="company-link" rel="nofollow">Visit Site</a></div>
+      <div class="company-card"><div class="company-info"><h3>Warren Carpet &amp; Floors</h3><p>Carpet &amp; flooring &mdash; Warren, MI</p></div><a href="https://www.warrencarpetandfloors.com" class="company-link" rel="nofollow">Visit Site</a></div>    </div>
+  </div></div>
 <footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-brand">Clinton Twp <span>Carpet &amp; Floors</span></div>
-        <p class="footer-tagline">Shop-at-home flooring serving Clinton Township MI and Metro Detroit for 20+ years.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="../">Home</a></li>
-          <li><a href="../about/">About Us</a></li>
-          <li><a href="../services/">Our Services</a></li>
-          <li><a href="../resources/">Resources</a></li>
-          <li><a href="../privacy-policy/">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; <span id="yr"></span> Clinton Township Carpet and Floors. All rights reserved.</span>
-      <a href="../privacy-policy/">Privacy Policy</a>
-    </div>
-  </div>
+  <span>&copy; <span id="yr"></span> Clinton Township Carpet and Floors. All rights reserved.</span>
+  <a href="../">Home</a>
+  <a href="../privacy-policy/">Privacy Policy</a>
 </footer>
-<a href="tel:5863277054" class="mobile-call-btn">Call Now — 586-327-7054</a>
 <script>
   document.getElementById("yr").textContent = new Date().getFullYear();
-  (function(){var hb=document.querySelector(".hamburger");var nv=document.querySelector("#nav-links");if(!hb||!nv)return;hb.addEventListener("click",function(){var open=nv.classList.toggle("open");hb.setAttribute("aria-expanded",open);});nv.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nv.classList.remove("open");hb.setAttribute("aria-expanded","false");});});})();
-  document.querySelectorAll(".faq-q").forEach(function(btn){btn.addEventListener("click",function(){var ans=this.nextElementSibling;var open=ans.classList.toggle("open");this.setAttribute("aria-expanded",open);});});
+  (function(){var hb=document.querySelector(".hamburger"),nv=document.querySelector("#nav-links");if(!hb||!nv)return;hb.addEventListener("click",function(){nv.classList.toggle("open");});nv.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nv.classList.remove("open");});});})();
 </script>
 </body>
 </html>
